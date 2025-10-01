@@ -1,13 +1,11 @@
 package Exercicios;
 
-import java.util.Date;
-
 public class Consulta {
-    private Date data;
+    private String data;
     private String nomePcente;
     private String nomeDents;
 
-    public Consulta(Date data, String nomePcente, String nomeDents) {
+    public Consulta(String data, String nomePcente, String nomeDents) {
         this.data = data;
         this.nomePcente = nomePcente;
         this.nomeDents = nomeDents;
@@ -19,11 +17,11 @@ public class Consulta {
         this.nomeDents = nomeDents;
     }
 
-    public Consulta(Date data) {
+    public Consulta(String data) {
         this.data = data;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
 
@@ -33,5 +31,6 @@ public class Consulta {
 
     public String getNomeDents() {
         return nomeDents;
-    }
+    } 
 }
+
